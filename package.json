@@ -2,6 +2,7 @@
   "name": "movie-search-app",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://ndeyles.github.io/homework-32",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -19,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +43,7 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^22.15.21"
+    "@types/node": "^22.15.21",
+    "gh-pages": "^6.3.0"
   }
 }
